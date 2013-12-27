@@ -52,12 +52,14 @@ technologies for integrating runtime code generation into high-level programs an
 At Oracle Labs I have started <a href="http://github.com/tiarkrompf/lancet">Project Lancet</a>, which aims to turn JIT compilers into precision tools in future JVM generations. I'm also looking into applying LMS to speed up data processing and query engines.</p>
 
 
-<p>As a member of Martin Odersky's Scala team since 2008, my contributions to <a href="http://www.scala-lang.org">Scala</a> include delimited continuations, efficient immutable data structures (Set, Map, Vector) and speedups in the Scala compiler (type checking, implicit search, bytecode generation; up to 3x for certain projects). I also started the <a href="https://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a> research branch.</p>
+<p>As a member of Martin Odersky's Scala team since 2008, my contributions to <a href="http://www.scala-lang.org">Scala</a> include delimited continuations, efficient immutable data structures (Set, Map, Vector) and speedups in the Scala compiler (type checking, implicit search, bytecode generation; up to 3x for certain projects). I also started the <a href="https://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a> research branch. More recently I became involved in formalizing parts of Scala's type system in the <a href="https://github.com/tiarkrompf/minidot">DOT</a> calculus.</p>
 
 <p>I received an MS in computer science from University of Lübeck (2008) and a PhD from EPFL (2012). Before my PhD I co-founded two startups and lead software projects outside of academia, ranging from CAD software for kitesurfing equipment to hospital systems for electronic anesthesia records, image processing for OCT workstations, and therapeutic games.</p>
 
-
+<!--
 <h2>Upcoming/Recent</h2>
+
+SPLASH, DSLFIN
 
 <ul>
 <li>September 2013: <a href="http://www.wgp-sigplan.org/2013">WGP</a>, co-located with ICFP
@@ -68,7 +70,7 @@ At Oracle Labs I have started <a href="http://github.com/tiarkrompf/lancet">Proj
 <li>Jan 2013: talk about LMS at POPL <a href="http://ppl.stanford.edu/papers/popl13_rompf_slides.pdf">[slides]</a>
 <li>Summer 2012: the <a href="http://www.nii.ac.jp/shonan/seminar019/">Shonan Challenge</a>
 </ul>
-
+-->
 
 <h2>Projects</h2>
 
@@ -82,7 +84,8 @@ At Oracle Labs I have started <a href="http://github.com/tiarkrompf/lancet">Proj
 
 <p>Past projects:</p>
 <ul>
-<li><a href="http://vodka.nachtlicht-media.de">Vodka</a>: a concurrent programming language based on join patterns and multi-method dispatch.
+<!-- <li><a href="http://vodka.nachtlicht-media.de">Vodka</a>: -->
+<li><a href="">Vodka</a>: a concurrent programming language based on join patterns and multi-method dispatch.
 </ul>
 
 
@@ -93,6 +96,25 @@ At Oracle Labs I have started <a href="http://github.com/tiarkrompf/lancet">Proj
 <h4>Journals</h4>
 
 <ul>
+
+<li><i>
+Fusing Functional and Object-Oriented Programming with Scala.
+</i>
+Martin Odersky, Tiark Rompf.
+To appear in Commun. ACM
+
+<li><i>
+Delite: A Compiler Architecture for Performance-Oriented Embedded Domain-Specific Languages.
+</i>
+Arvind K. Sujeeth, Kevin J. Brown, HyoukJoong Lee, Tiark Rompf, Hassan Chafi, Martin Odersky, Kunle Olukotun.
+To appear in ACM Trans. Embedded Computing Systems
+
+<li><i>
+Scala-Virtualized: Linguistic Reuse for Deep Embeddings.
+</i>
+Tiark Rompf, Nada Amin, Adriaan Moors, Philipp Haller, Martin Odersky. 
+Higher-Order and Symbolic Computation, September 2013
+
 <li><i>
 Lightweight Modular Staging: A Pragmatic Approach to Runtime Code Generation and Compiled DSLs. 
 </i>
@@ -112,9 +134,33 @@ A Cryptographically t-Private Auction System.
 Concurrency and Computation: Practice and Experience 23(12): 1399-1413 (2011)
 </ul>
 
-<h4>Conferences/Workshops</h4>
+<h4>Conferences/Workshops (Full Papers)</h4>
 
 <ul>
+
+<li><i>
+Making Domain-Specific Hardware Synthesis Tools Cost-Efficient.
+</i>
+Nithin George, David Novo, Tiark Rompf, Martin Odersky, Paolo Ienne.
+ICFPT '13
+
+<li><i>
+Spiral in Scala: Towards the Systematic Construction of Generators for Performance Libraries.
+</i>
+Georg Ofenbeck, Tiark Rompf, Alen Stojanov, Martin Odersky, Markus Püschel.
+GPCE '13
+
+<li><i>
+Forge: Generating a High Performance DSL Implementation from a Declarative Specification.
+</i>
+Arvind K Sujeeth, Austin Gibbons, Kevin J Brown, HyoukJoong Lee, Tiark Rompf, Martin Odersky, Kunle Olukotun.
+GPCE '13
+
+<li><i>
+What are the Odds? Probabilistic Programming in Scala.
+</i>
+Sandro Stucki, Nada Amin, Manohar Jonnalagedda, Tiark Rompf
+Scala Workshop '13
 
 <li><i>
 Composition and Reuse with Compiled Domain-Specific Languages.
@@ -144,7 +190,7 @@ ECOOP '12
 Scala-Virtualized. 
 </i>
 Adriaan Moors, Tiark Rompf, Philipp Haller, Martin Odersky. 
-PEPM '12 (invited for submission to HOSC special issue)
+PEPM '12 (selected for HOSC special issue)
 
 <li><i>
 StagedSAC: A Case Study in Performance-Oriented DSL Development. 
@@ -201,8 +247,47 @@ Markus Hinkelmann, Andreas Jakoby, Nina Moebius, Tiark Rompf, Peer Stechert.
 NSS '09
 </ul>
 
+<h4>Workshops (Extended Abstracts)</h4>
+<ul>
+
+<li><i>
+Abstraction Without Regret for Efficient Data Processing.
+</i>
+Tiark Rompf, Nada Amin, Thierry Coppey, Mohammad Dashti, Manohar Jonnalagedda, Yannis Klonatos, Martin Odersky, Christoph Koch.
+DCP 2014
+
+<li><i>
+Language Support for the Construction of High Performance Code Generators.
+</i>
+Georg Ofenbeck, Tiark Rompf, Alen Stojanov, Martin Odersky, Markus Püschel.
+ADAPT 2014
+
+<li><i>
+Mind the Gap.
+</i>
+Nada Amin, Tiark Rompf.
+OBT 2014
+
+<li><i>
+Delite: A Compiler Framework for High-Performance Embedded DSLs.
+</i>
+Tiark Rompf, Arvind K. Sujeeth, Kevin J. Brown, HyoukJoong Lee, Hassan Chafi, Martin Odersky, Kunle Olukotun.
+DSLFIN 2013
+
+<li><i>
+Crossing the Software-Hardware Chasm with DSLs. 
+</i>
+Arvind K. Sujeeth, Tiark Rompf, HyoukJoong Lee, Kevin J. Brown, Hassan Chafi, Martin Odersky, Kunle Olukotun.
+OBT 2013
+
+</ul>
+
+
 <h4>Technical Reports</h4>
 <ul>
+
+<!--LANCET-->
+
 <li><i>
 RRB-Trees: Efficient Immutable Vectors. 
 </i>
@@ -237,42 +322,109 @@ Master Thesis, Institute of Software Technology and Programming Languages, Unive
 </ul>
 
 
-<h4>Selected Talks</h4>
+<h2>Presentations</h2>
+
+<h4>Invited Talks</h4>
 <ul>
 
-<!--
 <li><i>
-Lightweight Modular Staging and Delite: High-Level High-Performance Programming.
+Title TBD.
 </i>
-Johannes-Kepler Universität Linz, 2012
--->
+Dagstuhl Seminar 14271 on Scripting Languages and Frameworks: Analysis and Verification, 2014
+
+<li><i>
+Title TBD.
+</i>
+IFIP Working Group 2.11, 13th Meeting, CMU, 2014
+
+<li><i>
+Lightweight Modular Staging in Scala.
+</i>
+The Future of Programming Symposium, TU Delft, 2014
+
+<li><i>
+Scala, LMS and Delite: Big Data on Heterogenenous Architectures.
+</i>
+NSF DALI Workshop on Dynamic Languages for Scalable Data Analytics, Indianapolis, 2013
+
+<li><i>
+Surgical Precision JIT Compilers.
+</i>
+Splash-I, Indianapolis, 2013
+
+<li><i>
+DSLs for Parallelism: Problems, Solutions and Open Issues.
+</i>
+LaME Workshop on Languages for the Multicore Era, Montpellier, 2013
+
+<li><i>
+Project Lancet: Surgical Precision JIT Compilers.
+</i>
+IFIP Working Group 2.11, 12th Meeting, University of Minnesota, 2013
+
+<li><i>
+Big Data in Industry (Panel Discussion).
+</i>
+XLDB Europe Workshop, CERN, 2013
+
+<li><i>
+Abstraction With and Without Regret: Can we Bridge the Productivity vs Performance Gap in Software Development?
+</i>
+ETH Zürich, 2013
+
+<li><i>
+High-Performance Embedded DSLs in Scala.
+</i>
+RAWFP Workshop on Productivity and Performance through Resource Aware Functional Programming, Chalmers University, 2012
+
+
+<li><i>
+High-Performance Embedded DSLs with Delite.
+</i>
+NII Shonan Meeting on Bridging the Theory of Staged Programming Languages and the Practice of High-Performance Computing, 2012
+
+</ul>
+
+<h4>Conference Tutorials</h4>
+
+<ul>
+
+<li><i>
+Scala, LMS and Delite for High-Performance DSLs and Program Generators.
+</i>
+Tiark Rompf, Kunle Olukotun, Markus Püschel (organizers).
+PLDI 2013
+
+<li><i>
+Tiark Rompf, Arvind K. Sujeeth.
+</i>
+Scala, LMS and Delite for High-Performance DSLs and Program Generators.
+ECOOP 2013 Summer School
+
+</ul>
+
+
+<h4>Selected Other Talks</h4>
+<ul>
+
+
+<li><i>
+Delite: A Compiler Framework for High-Performance Embedded DSLs.
+</i>
+DSLFIN 2013
+<a href="https://www.youtube.com/watch?v=IN9kkVUf9PU&list=SPA1VQCh5LmDd7kT1QTv6LH9OBJLuPBfpZ&index=2">[video]</a>
+
 
 <li><i>
 Project Lancet: Surgical Precision JIT Compilers.
 </i>
 ScalaDays 2013
+<a href="http://parleys.com/play/51c19f0be4b0ed877035681e/chapter0/agenda">[video]</a>
 
 <li><i>
-Project Lancet: Surgical Precision JIT Compilers.
+Delite: Domain Specific Languages for Big Data and Heterogeneous Parallelism.
 </i>
-IFIP Working Group 2.11, Twelfth Meeting, 
-2013 (invited)
-
-<li><i>
-Abstraction With and Without Regret: Can we Bridge the Productivity vs Performance Gap in Software Development?</i>
-ETH Zürich, 
-2013 (invited)
-
-<li><i>
-High-Performance Embedded DSLs in Scala.
-</i>
-RAWFP Workshop on productivity and performance through resource aware functional programming, 
-2012 (invited)
-
-<li><i>
-High-Performance Embedded DSLs with Delite.
-</i>
-NII Shonan Meeting on bridging the theory of staged programming languages  and the practice of high-performance computing, 2012 (invited)
+XLDB Europe Workshop, CERN, 2013
 
 <li><i>
 High-Level High-Performance Programming With Scala-Virtualized, LMS and Delite.
@@ -299,12 +451,61 @@ ICFP 2009
 <a href="http://vimeo.com/6656238">[video]</a>
 </ul>
 
+
 <h2>Activities</h2>
 
-<!-- <h4>Peer Review/Conferences</h4> -->
+<p>
+Program committees and conference organization:
+</p>
 
-<p>PEPM'14 (PC member), WGP'13 (PC member), DSLDI'13 (co-organizer), Science of Computer Programming (reviewer), Higher Order and Symbolic Computation (reviewer), ASPLOS'13 (reviewer), CW'11 (PC member), ESOP'11 (reviewer), PEPM'10 (reviewer), JufoCongress'03,'06 (co-organizer)</p>
+<ul>
 
+<li><i>
+ICFP 2014 (PC member):
+</i>
+International Conference on Functional Programming
+
+<li><i>
+WGP 2014 (PC co-chair): 
+</i>
+Workshop on Generic Programming
+
+<li><i>
+GPCE 2014 (PC member): 
+</i>
+Intl. Conference on Generative Programming: Concepts &amp; Experiences
+
+<li><i>
+PEPM 2014 (PC member): 
+</i>
+Workshop on Partial Evaluation and Program Manipulation
+
+<li><i>
+WGP 2013 (PC member): 
+</i>
+Workshop on Generic Programming
+
+<li><i>
+DSLDI 2013 (co-organizer): 
+</i>
+Workshop on Domain Specific Languages Design and Implementation
+
+<li><i>
+CW 2011 (PC member): 
+</i>
+Continuation Workshop
+
+<li><i>
+JufoCongress 2003 and 2006 (co-organizer): 
+</i>
+Deutscher JungforscherCongress (German young researchers congress)
+
+</ul>
+
+<p>
+Additional reviewing:
+Science of Computer Programming, Higher Order and Symbolic Computation, ASPLOS'13, ESOP'11, PEPM'10
+</p>
 
       </section>
       <footer>
