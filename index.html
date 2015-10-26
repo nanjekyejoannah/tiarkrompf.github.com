@@ -90,23 +90,26 @@ I am interested in bringing theoretical insights into practical use, and also in
 -->
 
 
-
-
 <h2>News</h2>
 <ul>
-<li>Upcoming LMS tutorials:
+<li><b>December 4, 2015: <a href="http://purdue-pl.github.io/PLSummit/"><b>Midwest PL Summit</b></a> at Purdue</b>
+<li>July 2015: <a href="http://vjovanov.github.io/dsldi-summer-school/">DSL Summer School</a> at EPFL
+
+<li>Recent LMS tutorials:
 <a href="http://cufp.org/2014/t11-tiark-rompf-batteries-included-generative-programming-with-scala-and-lms.html">ICFP / CUFP'14</a>,
 at <a href="http://2014.splashcon.org/event/splash2014-tutorials-batteries-included-generative-programming-with-scala-and-lms">SPLASH'14</a>,
 and at <a href="http://cgo.org/cgo2015/event/hpdsls-scala-lms-and-delite-for-high-%C2%ADperformance-dsls-and-program-generators/?instance_id=189">CGO'15</a>
 <li>Teaching: metaprogramming and program generation (<a href="http://tiarkrompf.github.io/cs590">CS590</a>, fall 2014),
-and Pierce's <a href="http://www.cis.upenn.edu/~bcpierce/sf/current/index.html">Software Foundations</a> class (<a href="http://tiarkrompf.github.io/cs565">CS565</a>, spring 2015)
+Pierce's <a href="http://www.cis.upenn.edu/~bcpierce/sf/current/index.html">Software Foundations</a> class (<a href="http://tiarkrompf.github.io/cs565">CS565</a>, spring 2015),
+undergraduate compilers (<a href="http://tiarkrompf.github.io/cs352">CS352</a>, fall 2015)
 
 </ul>
+
 Some recent...
 <ul>
 
-<li>papers: MICRO'14, OOPSLA'14 (2x), PLDI'14, VLDB'14, POPL'13
-<li>PCs: POPL'16, OOPSLA'15, PLDI'15, GPCE'15,'14, ICFP'14
+<li>papers: ICFP'15 (2x), MICRO'14, OOPSLA'14 (2x), PLDI'14, VLDB'14, POPL'13
+<li>PCs: POPL'16, OOPSLA'15, PLDI'15, GPCE'16,15,'14, ICFP'14
 <li>PC chairing: PEPM'16, FHPC'15, WGP'14
 </ul>
 
@@ -130,12 +133,27 @@ SPLASH, DSLFIN
 
 <h2>Research Bio</h2>
 
+Three recent papers:
+<ul>
+<li>
+Go Meta! A Case for Generative Programming and DSLs in Performance Critical Systems
+<a href="http://drops.dagstuhl.de/opus/volltexte/2015/5029/pdf/19.pdf">[pdf]</a>
+
+<li>
+Functional pearl: a SQL to C compiler in 500 lines of code
+<a href="https://www.cs.purdue.edu/homes/rompf/papers/rompf-icfp15.pdf">[pdf]</a>
+
+<li>
+From F to DOT: Type Soundness Proofs with Definitional Interpreters 
+<a href="http://arxiv.org/pdf/1510.05216.pdf">[pdf]</a>
+</ul>
+
 <p>Most of my work revolves around <a href="http://scala-lms.github.io">Lightweight Modular Staging (LMS)</a> and <a href="http://ppl.stanford.edu/Delite">Delite</a>,
 technologies for integrating runtime code generation into high-level programs and building embedded compilers for domain specific languages (DSLs). Delite is a joint project with Kunle Olukotun's group at the Stanford Pervasive Parallelism Lab. 
 At Oracle Labs (2012-2014) I started <a href="http://github.com/tiarkrompf/lancet">Project Lancet</a>, which aims to turn JIT compilers into precision tools in future JVM generations. I'm also applying LMS to speed up data processing and query engines.</p>
 
 
-<p>As a member of Martin Odersky's Scala team from 2008 to 2014, my contributions to <a href="http://www.scala-lang.org">Scala</a> include delimited continuations, efficient immutable data structures (Set, Map, Vector) and speedups in the Scala compiler (type checking, implicit search, bytecode generation; up to 3x for certain projects). I also started the <a href="https://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a> research branch. More recently I became involved in formalizing parts of Scala's type system in the <a href="https://github.com/tiarkrompf/minidot">DOT</a> calculus.</p>
+<p>As a member of Martin Odersky's Scala team from 2008 to 2014, my contributions to <a href="http://www.scala-lang.org">Scala</a> include delimited continuations, efficient immutable data structures (Set, Map, Vector) and speedups in the Scala compiler (type checking, implicit search, bytecode generation; up to 3x for certain projects). I also started the <a href="https://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a> research branch. More recently I helped formalize parts of Scala's type system in the <a href="https://github.com/tiarkrompf/minidot">DOT</a> calculus, leading to the first mechanized soundness proof of DOT.</p>
 
 <p>I received an MS in computer science from University of Lübeck (2008) and a PhD from EPFL (2012). Before my PhD I co-founded two startups and lead software projects outside of academia, ranging from CAD software for kitesurfing equipment to hospital systems for electronic anesthesia records, image processing for OCT workstations, and therapeutic games.</p>
 
@@ -209,6 +227,27 @@ Concurrency and Computation: Practice and Experience 23(12): 1399-1413 (2011)
 <h4>Conferences/Workshops (Full Papers)</h4>
 
 <ul>
+
+<li><i>
+Functional pearl: a SQL to C compiler in 500 lines of code
+</i>
+Tiark Rompf, Nada Amin.
+ICFP '15
+<!--https://www.cs.purdue.edu/homes/rompf/papers/rompf-icfp15.pdf-->
+
+<li><i>
+RRB vector: a practical general purpose immutable sequence
+</i>
+Nicolas Stucki, Tiark Rompf, Vlad Ureche, Phil Bagwell.
+ICFP '15
+
+<li><i>
+Go Meta! A Case for Generative Programming and DSLs in Performance Critical Systems
+</i>
+Tiark Rompf, Kevin J Brown, HyoukJoong Lee, Arvind K Sujeeth, Manohar Jonnalagedda, Nada Amin, Georg Ofenbeck, Alen Stojanov, Yannis Klonatos, Mohammad Dashti, Christoph Koch, Markus Püschel, Kunle Olukotun.
+SNAPL '15
+<!--http://drops.dagstuhl.de/opus/volltexte/2015/5029/pdf/19.pdf-->
+
 
 <li><i>
 Locality-Aware Mapping of Nested Parallel Patterns on GPUs
@@ -408,16 +447,26 @@ OBT 2013
 <ul>
 
 <li><i>
+From F to DOT: Type Soundness Proofs with Definitional Interpreters
+</i>
+Tiark Rompf, Nada Amin.
+Technical Report, Purdue University, 2015
+<a href="http://arxiv.org/abs/1510.05216">[arxiv]</a>
+<a href="http://arxiv.org/pdf/1510.05216.pdf">[pdf]</a>
+
+<li><i>
 RRB-Trees: Efficient Immutable Vectors. 
 </i>
 Phil Bagwell, Tiark Rompf. 
 Technical Report, EPFL, 2011
+<a href="http://infoscience.epfl.ch/record/169879/files/RMTrees.pdf">[pdf]</a>
 
 <li><i>
 Deprecating the Observer Pattern. 
 </i>
 Ingo Maier, Tiark Rompf, Martin Odersky. 
 Technical Report, EPFL, 2010
+<a href="http://infoscience.epfl.ch/record/148043/files/DeprecatingObserversTR2010.pdf">[pdf]</a>
 </ul>
 
 <h4>Theses</h4>
@@ -571,6 +620,20 @@ ECOOP 2013 Summer School
 <h4>Selected Other Talks</h4>
 <ul>
 
+<!--
+DSLDI DSL Platforms
+https://www.youtube.com/playlist?list=PLaR98oFkCJzsVxUWPOh9wuzkoRgrxtHav
+http://vjovanov.github.io/dsldi-summer-school/materials/monday/intro/07-summer-school-intro.pdf
+
+DSL Embedding in Scala
+https://www.youtube.com/playlist?list=PLaR98oFkCJzvjD9A1AkSsGFmDxj9PaxQM
+http://vjovanov.github.io/dsldi-summer-school/materials/tuesday/07-summer-school.pdf
+-->
+
+<!-- OOPSLA dot? -->
+<!-- PDX scala: https://www.youtube.com/watch?v=E7U2yPHTVRU -->
+
+
 <li><i>
 How types can turn a SQL interpreter into a SQL compiler: Building efficient query engines in a high-level language.
 </i>
@@ -640,6 +703,8 @@ Program committees and conference organization:
 
 <ul>
 
+<!-- Midwest PL Summit -->
+<!-- DSLDISS summer school -->
 
 <li><i>
 POPL 2016 (PC member): 
@@ -650,6 +715,11 @@ Symposium on Principles of Programming Languages
 PEPM 2016 (PC co-chair): 
 </i>
 Workshop on Partial Evaluation and Program Manipulation
+
+<li><i>
+GPCE 2016 (PC member): 
+</i>
+International Conference on Generative Programming: Concepts \& Experiences
 
 <li><i>
 OOPSLA 2015 (PC member): 
