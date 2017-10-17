@@ -61,6 +61,15 @@ a:hover small {
   margin:0 auto;
 }
 
+.imgalign {
+  margin-left:2ex;
+}
+.imgalign img {
+  vertical-align: middle;
+  margin-right: 1ex;
+  /* border: 1px solid red; */
+}
+
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
