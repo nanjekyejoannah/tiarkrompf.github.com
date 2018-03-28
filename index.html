@@ -107,6 +107,7 @@ I am interested in bringing theoretical insights into practical use, and also in
 
 <h2>News</h2>
 <ul>
+<li>Mar 2018: Introducing <a href="https://github.com/feiwang3311/Lantern">Lantern</a>, a deep learning framework based on LMS and delimited continuations. Accompanying paper: <a href="TODO">Demystifying Differentiable Programming: Shift/Reset the Penultimate Backpropagator</a>.
 <li>Mar 2018: New <a href="https://twitter.com/tiarkrompf/status/969612967561039872">benchmarking hardware</a>! Twin servers with 192 cores, 6TB RAM, 19.2 TB NVMe, and a 32 GPU cluster.
 <li>Feb 2018: New drafts: (1) <a href="https://arxiv.org/pdf/1802.05340.pdf">From Gameplay to Symbolic Reasoning: Learning SAT Solver Heuristics in the Style of Alpha(Go) Zero</a>, (2) <a href="https://openreview.net/pdf?id=SJxJtYkPG">A Language and Compiler View on Differentiable Programming</a> (submitted to ICLR'18)
 <li>Jan 2018: New papers: (1) <a href="http://cs.purdue.edu/~rompf/papers/amin-draft2017a.pdf">Collapsing Towers of Interpreters</a> (POPL'18, <a href="https://www.youtube.com/watch?v=91m8X8hSEXg&feature=youtu.be&t=1">video</a>), (2) <a href="https://astojanov.github.io/publications/preprint/004_cgo18-simd.pdf">SIMD Intrinsics on Managed Language Runtimes</a> (CGO'18)
@@ -195,7 +196,7 @@ My research is generously supported by the following sponsors:
 </div>
 
 <p>
-Three representative papers:
+Representative papers:
 </p>
 <ul>
 <li>
@@ -212,12 +213,12 @@ From F to DOT: Type Soundness Proofs with Definitional Interpreters
 </ul>
 
 
-<p>Most of my work revolves around <a href="http://scala-lms.github.io">Lightweight Modular Staging (LMS)</a> and <a href="http://ppl.stanford.edu/Delite">Delite</a>,
-technologies for integrating runtime code generation into high-level programs and building embedded compilers for domain specific languages (DSLs). Delite is a joint project with Kunle Olukotun's group at the Stanford Pervasive Parallelism Lab. 
-At Oracle Labs (2012-2014) I started <a href="http://github.com/tiarkrompf/lancet">Project Lancet</a>, which aims to turn JIT compilers into precision tools in future JVM generations. I'm also applying LMS to speed up data processing and query engines.
+<p>Most of my work revolves around <a href="http://scala-lms.github.io">Lightweight Modular Staging (LMS)</a>,
+a platform and methodology for integrating runtime code generation into high-level programs and especially for building embedded compilers for domain specific languages (DSLs). <a href="http://ppl.stanford.edu/Delite">Delite</a> is a compiler framework jointly developed with Kunle Olukotun's group at the Stanford Pervasive Parallelism Lab. 
+At Oracle Labs (2012-2014) I started <a href="http://github.com/tiarkrompf/lancet">Project Lancet</a>, which aims to turn JIT compilers into precision tools in future JVM generations. I am also applying LMS to speed up data processing and query engines.
 The most recent work in this direction is <a href="http://flaredata.github.io">Flare</a>, an accelerator back-end for Apache Spark that achieves order of magnitude speedups by compiling SQL and data frame queries to native code.</p>
 
-<p>This whole area is seeing a surge of interest with the proliferation of AI systems based on <a href="https://openreview.net/forum?id=SJxJtYkPG">computation graphs and automatic differentiation</a>. I am also interested in applying deep learning techniques to formal reasoning, in particular casting symbolic problems like proof search as <a href="https://arxiv.org/abs/1802.05340">gameplay in the style of AlphaGo.</a>
+<p>This whole area is seeing a surge of interest with the proliferation of AI systems based on <a href="https://openreview.net/forum?id=SJxJtYkPG">computation graphs and automatic differentiation</a>. Our project <a href="https://github.com/feiwang3311/Lantern/">Lantern</a> is a new take on deep learning frameworks based on LMS and delimited continuations, combining the benefits of TensorFlow and PyTorch. I am also interested in applying deep learning techniques to formal reasoning, in particular casting symbolic problems like program synthesis and proof search as <a href="https://arxiv.org/abs/1802.05340">gameplay in the style of AlphaGo.</a>
 </p>
 
 
@@ -229,8 +230,9 @@ The most recent work in this direction is <a href="http://flaredata.github.io">F
 <h2>Projects</h2>
 
 <ul>
-<li><a href="http://scala-lms.github.io">Lightweight Modular Staging (LMS)</a>: runtime code generation and embedded compilers - abstraction without regret!
-<li><a href="http://flaredata.github.io">Flare</a>: native query compilation for Spark and TensorFlow
+<li><a href="https://scala-lms.github.io">Lightweight Modular Staging (LMS)</a>: runtime code generation and embedded compilers - abstraction without regret!
+<li><a href="https://flaredata.github.io">Flare</a>: native query compilation for Spark and TensorFlow
+<li><a href="https://github.com/feiwang3311/Lantern/">Lantern</a>: an expressive and performant deep learning framework
 <li><a href="http://ppl.stanford.edu/Delite">Delite</a>: a compiler and runtime framework for compiled embedded DSLs.
 <li><a href="http://github.com/tiarkrompf/lancet">Lancet</a>: surgical precision JIT compilers.
 <li><a href="http://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a>: redefining built-in language features as library calls
@@ -276,6 +278,12 @@ Gregory Essertel, Ruby Tahboub, James Decker, Kevin Brown, Kunle Olukotun, Tiark
 <h4>Journals</h4>
 
 <ul>
+
+<li><i>
+A SQL to C Compiler in 500 Lines of Code.
+</i>
+Tiark Rompf, Nada Amin.
+Journal of Functional Programming (to appear).
 
 <li><i>
 Unifying Functional and Object-Oriented Programming with Scala.
@@ -338,6 +346,8 @@ Nada Amin, Tiark Rompf.
 POPL '18
 <!-- <a href="http://cs.purdue.edu/~rompf/papers/amin-draft2017a.pdf">[pdf]</a> -->
 
+
+
 <li><i>
 Staging for Generic Programming in Space and Time.
 </i>
@@ -349,6 +359,12 @@ Rust-Like Borrowing with 2nd-Class Values (Short Paper).
 </i>
 Leo Osvald, Tiark Rompf.
 SCALA '17
+
+<li><i>
+Flexible Data Views: Design and Implementation
+</i>
+Leo Osvald, Tiark Rompf.
+ARRAY '17
 
 <li><i>
 Towards Strong Normalization for Dependent Object Types (DOT). 
@@ -386,13 +402,13 @@ PEPM '17
 Reflections on LMS: Exploring Front-End Alternatives.
 </i>
 Tiark Rompf.
-Scala Symposium '16
+SCALA '16
 
 <li><i>
 RandIR: Differential Testing for Embedded Compilers.
 </i>
 Georg Ofenbeck, Tiark Rompf, Markus Püschel.
-Scala Symposium '16
+SCALA '16
 
 <li><i>
 On Supporting Compilation in Main-Memory Spatial Query Engines.
@@ -433,20 +449,20 @@ CGO '16
 
 
 <li><i>
-Functional pearl: a SQL to C compiler in 500 lines of code
+Functional Pearl: A SQL to C Compiler in 500 Lines of Code.
 </i>
 Tiark Rompf, Nada Amin.
 ICFP '15
 <!--https://www.cs.purdue.edu/homes/rompf/papers/rompf-icfp15.pdf-->
 
 <li><i>
-RRB vector: a practical general purpose immutable sequence
+RRB Vector: A Practical General Purpose Immutable Sequence.
 </i>
 Nicolas Stucki, Tiark Rompf, Vlad Ureche, Phil Bagwell.
 ICFP '15
 
 <li><i>
-Go Meta! A Case for Generative Programming and DSLs in Performance Critical Systems
+Go Meta! A Case for Generative Programming and DSLs in Performance Critical Systems.
 </i>
 Tiark Rompf, Kevin J Brown, HyoukJoong Lee, Arvind K Sujeeth, Manohar Jonnalagedda, Nada Amin, Georg Ofenbeck, Alen Stojanov, Yannis Klonatos, Mohammad Dashti, Christoph Koch, Markus Püschel, Kunle Olukotun.
 SNAPL '15
@@ -455,19 +471,19 @@ SNAPL '15
 
 
 <li><i>
-Locality-Aware Mapping of Nested Parallel Patterns on GPUs
+Locality-Aware Mapping of Nested Parallel Patterns on GPUs.
 </i>
 HyoukJoong Lee, Kevin J. Brown, Arvind K. Sujeeth, Tiark Rompf, Kunle Olukotun.
 MICRO '14
 
 <li><i>
-Foundations of Path-Dependent Types
+Foundations of Path-Dependent Types.
 </i>
 Nada Amin, Tiark Rompf, Martin Odersky.
 OOPSLA '14
 
 <li><i>
-Staged Parser Combinators for Efficient Data Processing
+Staged Parser Combinators for Efficient Data Processing.
 </i>
 Manohar Jonnalagedda, Thierry Coppey, Sandro Stucki, Tiark Rompf, Martin Odersky.
 OOPSLA '14
@@ -616,6 +632,12 @@ NSS '09
 <ul>
 
 <li><i>
+A Language and Compiler View on Differentiable Programming.
+</i>
+Fei Wang, Tiark Rompf.
+ICLR Workshop Track 2018
+
+<li><i>
 Abstraction Without Regret for Efficient Data Processing.
 </i>
 Tiark Rompf, Nada Amin, Thierry Coppey, Mohammad Dashti, Manohar Jonnalagedda, Yannis Klonatos, Martin Odersky, Christoph Koch.
@@ -637,7 +659,8 @@ OBT 2014
 Delite: A Compiler Framework for High-Performance Embedded DSLs.
 </i>
 Tiark Rompf, Arvind K. Sujeeth, Kevin J. Brown, HyoukJoong Lee, Hassan Chafi, Martin Odersky, Kunle Olukotun.
-DSLFIN 2013
+DSLFIN 2013 
+<!-- Workshop on DSLs in Finance -->
 
 <li><i>
 Crossing the Software-Hardware Chasm with DSLs. 
@@ -651,8 +674,28 @@ OBT 2013
 <h4>Technical Reports</h4>
 <ul>
 
+
 <li><i>
-From F to DOT: Type Soundness Proofs with Definitional Interpreters
+Demystifying Differentiable Programming: Shift/Reset the Penultimate Backpropagator.
+</i>
+Fei Wang, Xilun Wu, Gregory Essertel, James Decker, Tiark Rompf.
+Technical Report, Purdue University, 2018
+<!-- <a href="https://arxiv.org/pdf/1802.05340">[arxiv]</a>
+<a href="https://arxiv.org/pdf/1802.05340.pdf">[pdf]</a> -->
+
+<li><i>
+From Gameplay to Symbolic Reasoning: Learning SAT Solver Heuristics in the Style of Alpha(Go) Zero.  
+</i>
+Fei Wang, Tiark Rompf.
+Technical Report, Purdue University, 2018
+<a href="https://arxiv.org/pdf/1802.05340">[arxiv]</a>
+<a href="https://arxiv.org/pdf/1802.05340.pdf">[pdf]</a>
+
+
+
+
+<li><i>
+From F to DOT: Type Soundness Proofs with Definitional Interpreters.
 </i>
 Tiark Rompf, Nada Amin.
 Technical Report, Purdue University, 2015
@@ -699,6 +742,22 @@ Master Thesis, Institute of Software Technology and Programming Languages, Unive
 
 <h4>Invited Talks</h4>
 <ul>
+
+<li><i>
+TBD
+</i>
+SAP HANA Tech Days, Houston, 2018
+
+<li><i>
+TBD
+</i>
+IFIP Working Group 2.11, 18th Meeting, University of Kyoto, 2018
+
+<li><i>
+What Programming Languages Research has to Offer for Big Data and AI.
+</i>
+Huawei Midwest Research Summit: Artificial Intelligence, Champaign, 2017
+
 
 <li><i>
 Building efficient query engines in a high-level language.
@@ -882,7 +941,13 @@ http://vjovanov.github.io/dsldi-summer-school/materials/tuesday/07-summer-school
 <!-- PDX scala: https://www.youtube.com/watch?v=E7U2yPHTVRU -->
 <!-- ICFP 2015: https://www.youtube.com/watch?v=kGuVlTfoZIY -->
 
-
+<!-- 
+<li><i>
+FIXME 
+</i>
+Spark+AI Summit, San Francisco, 2018, with Grégory Essertel
+<a href="">[video]</a>
+-->
 
 <li><i>
 How types can turn a SQL interpreter into a SQL compiler.
@@ -1052,7 +1117,16 @@ ManLang 2018:
 </i>
 International Conference on Managed Languages &amp; Runtimes.
 
+<!--
+CADO 2018
+DBTest 2018
+TFP 2018
+-->
 
+<li><i>
+OOPSLA 2018 (EPC member): 
+</i>
+Conference on Object-Oriented Programming Languages and Systems
 
 <li><i>
 VLDB 2018:
