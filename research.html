@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tiark Rompf</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39122235-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tiark &nbsp;Rompf</h1>
+
+        <p><img style="width:15em" src="pic.png"></p>
+
+        <!-- <h3>Find me here:</h3>
+        <p class="view"></p> -->
+
+        <ul>
+<!--          <li><a href="https://purduepl.github.io">Purdue PL Group (PurPL)</a> -->
+          <li><a href="https://www.cs.purdue.edu/people/faculty/rompf/">firstname@purdue.edu</a>
+          <li><a href="http://scholar.google.com/citations?user=L8zhVsMAAAAJ&hl=en">google scholar</a>, 
+          <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rompf:Tiark.html">dblp</a>
+          <li><a href="https://github.com/tiarkrompf">github.com/tiarkrompf</a>
+          <li><a href="https://twitter.com/tiarkrompf">twitter.com/tiarkrompf</a>
+          <p></p>
+          <a href="https://purduepl.github.io">
+          <img src="https://purduepl.github.io/assets/banner.png" style="width:10em" /></a>
+          <li><a href="https://purduepl.github.io">Purdue PL Group (PurPL)</a>
+
+        </ul>
+
+      </header>
+      <section>
+
+<p><a href="index.html">Home</a> 
+ | <a href="research.html">Research</a> 
+ | <a href="publications.html">Publications</a> 
+ | <a href="talks.html">Talks</a>
+ | <a href="group.html">Group</a>
+ | <a href="teaching.html">Teaching</a>
+ | <a href="service.html">Service</a>
+
+
+
+<h2>Projects</h2>
+
+<ul>
+<li><a href="https://scala-lms.github.io">LMS (Lightweight Modular Staging)</a>: runtime code generation and embedded compilers - abstraction without regret!
+<li><a href="https://flaredata.github.io">Flare</a>: native query compilation for Spark and TensorFlow
+<li><a href="https://github.com/feiwang3311/Lantern/">Lantern</a>: an expressive and performant deep learning framework
+<li><a href="http://ppl.stanford.edu/Delite">Delite</a>: a compiler and runtime framework for compiled embedded DSLs.
+<li><a href="http://github.com/tiarkrompf/lancet">Lancet</a>: surgical precision JIT compilers.
+<li><a href="http://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a>: redefining built-in language features as library calls
+<li><a href="http://github.com/tiarkrompf/minidot">DOT</a>: mechanized foundations for Scala and similar languages
+</ul>
+
+<!-- <h2>Sponsors</h2> -->
+
+My research is generously supported by the following sponsors:
+
+<div class="imgalign">
+  <img src="sponsors/nsf.jpg" height="50px"/>
+  <img src="sponsors/doe.png" height="60px"/>
+  <img src="sponsors/prf.png" height="40px"/>
+</div><div class="imgalign">
+  <img src="sponsors/oracle.png" height="20px"/>
+  <img src="sponsors/google.png" height="40px"/>
+  <img src="sponsors/huawei.jpg" height="40px"/>
+  <img src="sponsors/vmware.png" height="40px"/>
+  <!--<img src="sponsors/sap.png" height="40px"/>-->
+</div>
+
+
+<h2>Research</h2>
+
+Representative papers:
+<ul>
+<li>
+Go Meta! A Case for Generative Programming and DSLs in Performance Critical Systems
+<a href="http://drops.dagstuhl.de/opus/volltexte/2015/5029/pdf/19.pdf">[pdf]</a>
+
+<li>
+Functional pearl: a SQL to C compiler in 500 lines of code
+<a href="https://www.cs.purdue.edu/homes/rompf/papers/rompf-icfp15.pdf">[pdf]</a>
+
+<li>
+From F to DOT: Type Soundness Proofs with Definitional Interpreters 
+<a href="http://arxiv.org/pdf/1510.05216.pdf">[pdf]</a>
+</ul>
+
+
+<p>Most of my work revolves around <a href="http://scala-lms.github.io">Lightweight Modular Staging (LMS)</a>,
+a platform and methodology for integrating runtime code generation into high-level programs and especially for building embedded compilers for domain specific languages (DSLs). <a href="http://ppl.stanford.edu/Delite">Delite</a> is a compiler framework jointly developed with Kunle Olukotun's group at the Stanford Pervasive Parallelism Lab. 
+At Oracle Labs (2012-2014) I started <a href="http://github.com/tiarkrompf/lancet">Project Lancet</a>, which aims to turn JIT compilers into precision tools in future JVM generations. I am also applying LMS to speed up data processing and query engines.
+The most recent work in this direction is <a href="http://flaredata.github.io">Flare</a>, an accelerator back-end for Apache Spark that achieves order of magnitude speedups by compiling SQL and data frame queries to native code.</p>
+
+<p>This whole area is seeing a surge of interest with the proliferation of AI systems based on <a href="https://openreview.net/forum?id=SJxJtYkPG">computation graphs and automatic differentiation</a>. Our project <a href="https://github.com/feiwang3311/Lantern/">Lantern</a> is a new take on deep learning frameworks <a href="https://arxiv.org/pdf/1803.10228.pdf">based on LMS and delimited continuations</a>, combining the benefits of TensorFlow and PyTorch. I am also interested in applying deep learning techniques to formal reasoning, in particular casting symbolic problems like program synthesis and proof search as <a href="https://arxiv.org/abs/1802.05340">gameplay in the style of AlphaGo.</a>
+</p>
+
+
+<p>As a member of Martin Odersky's Scala team from 2008 to 2014, my contributions to <a href="http://www.scala-lang.org">Scala</a> include delimited continuations, efficient immutable data structures (Set, Map, Vector) and speedups in the Scala compiler (type checking, implicit search, bytecode generation; up to 3x for certain projects). I also started the <a href="https://github.com/tiarkrompf/scala-virtualized">Scala-Virtualized</a> research branch. More recently I helped formalize parts of Scala's type system in the <a href="https://github.com/tiarkrompf/minidot">DOT</a> calculus, leading to the first mechanized soundness proof of DOT.</p>
+
+<p>I received an MS in computer science from University of Lübeck (2008) and a PhD from EPFL (2012). Before my PhD I co-founded two startups and lead software projects outside of academia, ranging from CAD software for kitesurfing equipment to hospital systems for electronic anesthesia records, image processing for OCT workstations, and therapeutic games.</p>
+
+
+
+<!--
+<p>Past projects:</p>
+<ul>
+<li><a href="http://vodka.nachtlicht-media.de">Vodka</a>: a concurrent programming language based on join patterns and multi-method dispatch.
+</ul>
+-->
+
+
+
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
